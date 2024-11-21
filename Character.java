@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class Character {
     // Fields -------------------------------
     
@@ -10,6 +12,10 @@ public class Character {
     private double strength;
     private double speed;
     private double intelligence;
+    private LinkedList<Item> inventory;
+
+
+    
 
 
 
@@ -18,7 +24,10 @@ public class Character {
 
     // Constructor -------------------------------
     public Character(String name) {
+
         
+
+        inventory = new LinkedList<>();
     }
 
 
@@ -28,7 +37,7 @@ public class Character {
     /**
      * METHODS TO ADD
      * -- equip weapon
-     * -- 
+     * -- heal
      * 
      * 
      */
