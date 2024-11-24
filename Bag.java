@@ -34,4 +34,7 @@ public class Bag implements Inventory {
         itemSlots = Arrays.copyOf(itemSlots, itemSlots.length + extraSlots);
     }
 
+    
+
+
 }
