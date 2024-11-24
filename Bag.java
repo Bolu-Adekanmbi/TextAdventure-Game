@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Bag implements Inventory {
     private int capacity;
     Item[] itemSlots;
@@ -26,6 +28,10 @@ public class Bag implements Inventory {
 
     public boolean isFull() {
         return size >= capacity;
+    }
+
+    private void expandCapacity(int extraSlots) {
+        itemSlots = Arrays.copyOf(itemSlots, itemSlots.length + extraSlots);
     }
 
 }
