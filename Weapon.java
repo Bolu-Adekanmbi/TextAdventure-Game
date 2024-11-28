@@ -4,7 +4,7 @@ public class Weapon implements Item {
     public static StringBuilder weaponHistory;
 
 
-    public boolean enhance() {
+    public boolean enhance(Upgrade newUpgrade) {
         return false;
     }
 

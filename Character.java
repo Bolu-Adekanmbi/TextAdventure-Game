@@ -15,6 +15,8 @@ public class Character {
     private double speed;
     private double intelligence;
     private LinkedList<Item> inventory;
+    private LinkedList<Armour> armourSet;
+
 
 
     
