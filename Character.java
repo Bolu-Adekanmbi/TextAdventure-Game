@@ -40,6 +40,8 @@ public class Character {
 
     // Methods -------------------------------
     
+
+    
     /*
      * /////// BASIC GETTER METHODS //////////
      */

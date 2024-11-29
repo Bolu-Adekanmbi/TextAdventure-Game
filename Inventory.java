@@ -6,7 +6,7 @@ public interface Inventory {
 
     public void shuffle();
 
-    public boolean remove(Item anItem);
+    public Item remove(Item anItem);
 
     public boolean add(Item newItem);
 
