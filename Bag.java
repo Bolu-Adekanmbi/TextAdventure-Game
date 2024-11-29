@@ -34,6 +34,31 @@ public class Bag implements Inventory {
         itemSlots = Arrays.copyOf(itemSlots, itemSlots.length + extraSlots);
     }
 
+    public void shuffle() {
+
+    }
+
+    public boolean remove(Item anItem) {
+        
+        
+        return false;
+    }
+
+    public boolean add(Item newItem) {
+        if (this.isFull()) {
+            return false;
+        }
+
+        // --> Should have some sort of prompt if player can expand inventory
+        // ----> Or maybe separate add method from equip which includes add + prompt
+
+        return false;
+    }
+
+
+    
+    
+
     
 
 

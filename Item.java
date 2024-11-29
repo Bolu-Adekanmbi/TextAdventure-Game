@@ -5,7 +5,7 @@ public interface Item {
      * 
      * @return Returns a boolean value indicating whether or not the item as successfully upgraded
      */
-    public boolean upgrade();
+    public boolean upgrade(Upgrade itemUpgrade);
 
     
 

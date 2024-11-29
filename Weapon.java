@@ -8,7 +8,7 @@ public class Weapon implements Item {
         return false;
     }
 
-    public boolean upgrade() {
+    public boolean upgrade(Upgrade weaponUpgrade) {
         return false;
     }
 

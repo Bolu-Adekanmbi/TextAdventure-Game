@@ -16,6 +16,9 @@ public class Character {
     private double intelligence;
     private LinkedList<Item> inventory;
     private LinkedList<Armour> armourSet;
+    
+    // The weapon currently being held
+    private Weapon inHand;
 
 
 
@@ -51,6 +54,17 @@ public class Character {
     public int getLevel() {
         return this.level;
     }
+
+        public int attack(Entity victim) {
+            return 0;
+
+
+            // Will use weapon inHand that can be switched out
+            // will return how much damage the attack was
+            
+            // Remember to make sure health never goes to negative after attack
+
+        }
 
 
 
