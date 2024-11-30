@@ -10,11 +10,13 @@
 ### Currently Thinking about
 - [ ] Need to re-design character architecture --> Potentially too many fields right now
 
+
 ### Nice to haves (extra-stuff)
 - [ ] Cooking - combining raw ingredients (similar to breath of the wild)
 - [ ] Item crafting -> Craftin items based on raw materials
     - [ ] Need to brainstorm a crafting recipe book (might keep hidden from player??)
 - [ ] GUI for displaying what is going on as well?
+- [ ] Further Interactions such as boost (for teammates), heal, etc.
 
 
 
