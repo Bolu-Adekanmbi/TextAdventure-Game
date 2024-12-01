@@ -13,6 +13,7 @@ public class CharacterCreation {
 
         Character player = new Character(name);
 
+        input.close();
 
     }
 

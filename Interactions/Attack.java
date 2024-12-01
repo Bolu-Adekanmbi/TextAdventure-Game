@@ -6,7 +6,7 @@ public class Attack {
     Entity recipient;
     int damage;
 
-    public Attack() {
+    public Attack(Entity aggressor, Entity recipient, double damage) {
 
     }
 

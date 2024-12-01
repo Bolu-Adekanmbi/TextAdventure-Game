@@ -4,6 +4,7 @@ public class Weapon implements Item {
 
     private int level;
     public static StringBuilder weaponHistory;
+    public double damage;
 
 
     public boolean enhance(Upgrade newUpgrade) {
@@ -16,6 +17,14 @@ public class Weapon implements Item {
 
     public String tellStory() {
         return weaponHistory.toString();
+    }
+
+    public double getDamage() {
+        return this.damage;
+    }
+
+    public void setDamage(double newDamage) {
+        this.damage = newDamage;
     }
 
     
