@@ -1,4 +1,4 @@
-package Entities;
+package GameEntities;
 
 public class Armour {
     int durability;

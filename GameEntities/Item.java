@@ -1,4 +1,4 @@
-package Entities;
+package GameEntities;
 
 public interface Item {
     /**
