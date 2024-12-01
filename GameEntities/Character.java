@@ -38,7 +38,8 @@ public class Character implements Entity {
     public Character(String name) {
 
         
-
+        inHand = new Weapon("Hand", 5);
+        
         inventory = new LinkedList<>();
     }
 
@@ -78,9 +79,6 @@ public class Character implements Entity {
         currentAttack.execute();
 
         return 0;
-
-
-
         
         // Will use weapon inHand that can be switched out
         // will return how much damage the attack was
@@ -94,17 +92,18 @@ public class Character implements Entity {
     }
 
 
-
-
-
     public void setHealth(double newHealth) {
         this.health = newHealth;
     }
 
-
+    public void setStrength(double newStrength) {
+        this.strength = newStrength;
+    }
 
     
-
+    public String toString() {
+        return this.name +" Health: "+ this.health;
+    }
 
     /**
      * METHODS TO ADD

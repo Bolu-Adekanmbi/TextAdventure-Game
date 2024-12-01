@@ -2,9 +2,11 @@ package GameEntities;
 
 public class Enemy implements Entity {
     private double health;
+    private String name;
     
-    public Enemy() {
-
+    public Enemy(String name, double health) {
+        this.name = name;
+        this.health = health;
     }
 
 
@@ -15,4 +17,9 @@ public class Enemy implements Entity {
     public void setHealth(double newHealth) {
         this.health =  newHealth;
     }
+
+    public String toString() {
+        return this.name +" Health: "+ this.health;
+    }
+
 }
