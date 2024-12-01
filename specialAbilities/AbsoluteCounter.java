@@ -1,6 +1,6 @@
 package specialAbilities;
 import Interactions.*;
-import Entities.*;
+import GameEntities.*;
 
 public class AbsoluteCounter implements SpecialAbility {
     private int damage;

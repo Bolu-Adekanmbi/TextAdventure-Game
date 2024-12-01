@@ -1,5 +1,5 @@
 package Interactions;
-import Entities.*;
+import GameEntities.*;
 
 public class Attack {
     Entity aggressor;
