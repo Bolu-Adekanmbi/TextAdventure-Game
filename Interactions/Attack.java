@@ -33,7 +33,12 @@ public class Attack {
      * between an action being called and the actual execution
      */
     public void execute() {
+        Enemy victim = (Enemy) recipient;
+        victim.setHealth(victim.getHealth() - damage);
 
+        if (victim.getHealth() < 0 ) {
+            victim.setHealth(0);
+        }
     }
 
     

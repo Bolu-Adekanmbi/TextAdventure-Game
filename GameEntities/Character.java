@@ -89,6 +89,17 @@ public class Character implements Entity {
 
     }
 
+    public double getHealth() {
+        return this.health;
+    }
+
+
+
+
+
+    public void setHealth(double newHealth) {
+        this.health = newHealth;
+    }
 
 
 
