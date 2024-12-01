@@ -6,6 +6,8 @@
 - [ ] Character moveSet based on character class 
     - [ ] Brainstorm of varying character classes and work on write-up documentation for this for additional readme file
 
+- [ ] Need to Rearrange some classes that are currently in GameEntities package
+
 
 ### Currently Thinking about
 - [ ] Need to re-design character architecture --> Potentially too many fields right now
