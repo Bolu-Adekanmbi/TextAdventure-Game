@@ -20,8 +20,6 @@
 - [ ] GUI for displaying what is going on as well?
 - [ ] Further Interactions such as boost (for teammates), heal, etc.
 
-
-
 ### Class implementations
 - [ ] Linked List
 - [ ] ArmourSet
