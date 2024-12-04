@@ -10,6 +10,7 @@
 
 
 ### Currently Thinking about
+- [ ] Fix simulation test
 - [ ] Need to re-design character architecture --> Potentially too many fields right now
 
 

@@ -22,6 +22,11 @@ public class TestSimulation {
 
         System.out.println(player);
         System.out.println(enemy);
+
+        /**
+         * FIX THIS NOWWWWW!!!!!!!!!!!
+         * 
+         */
         
     }
 }
