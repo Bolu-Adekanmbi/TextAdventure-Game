@@ -2,7 +2,7 @@ package GameEntities;
 
 import java.util.Arrays;
 
-public class Bag implements Inventory {
+public class Bag implements Inventory, Iterable<Item> {
     private int capacity;
     Item[] itemSlots;
     private int size;
@@ -25,7 +25,6 @@ public class Bag implements Inventory {
         itemSlots[size] = newItem;
         size++;
         return true;
-
     }
 
     public boolean isFull() {
@@ -113,7 +112,10 @@ public class Bag implements Inventory {
         }
     } 
 
-
+    // Finish working on the iterator later
+    public Iterator<Item> iterator() {
+        return new Iterator();
+    }
     
     
 
