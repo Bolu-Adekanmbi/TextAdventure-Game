@@ -76,8 +76,12 @@ public class Character implements Entity {
         /*
          * Executing the current attack
          */
-        currentAttack.execute();
+        int attackSuccess = currentAttack.execute();
 
+        // .execute returns 2 when the health of the victim is 0
+        if (attackSuccess == 2) {
+            inHand.addToStory(inHand.getName() + " conquered: " + victim.getName());
+        }
         return 0;
         
         // Will use weapon inHand that can be switched out

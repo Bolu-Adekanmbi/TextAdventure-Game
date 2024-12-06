@@ -17,6 +17,14 @@ public class Weapon implements Item {
         this.damage = damage;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
     public boolean enhance(Upgrade newUpgrade) {
         return false;
     }
@@ -35,6 +43,10 @@ public class Weapon implements Item {
 
     public void setDamage(double newDamage) {
         this.damage = newDamage;
+    }
+
+    public void addToStory(String newStory) {
+        weaponHistory.append("\n" + newStory + "\n");
     }
 
     

@@ -32,14 +32,23 @@ public class Attack {
      * I am using just in case I want to make event handlers later or add things in
      * between an action being called and the actual execution
      */
-    public void execute() {
+    public int execute() {
         Enemy victim = (Enemy) recipient;
         victim.setHealth(victim.getHealth() - damage);
 
         if (victim.getHealth() < 0 ) {
             victim.setHealth(0);
         }
+
+        if (victim.getHealth() == 0) {
+            return 2;
+        }
+
+
+        return -1;
     }
+
+
 
     
 
