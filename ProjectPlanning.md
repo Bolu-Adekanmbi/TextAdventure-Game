@@ -12,6 +12,7 @@
 ### Currently Thinking about
 - [ ] Fix simulation test
 - [ ] Need to re-design character architecture --> Potentially too many fields right now
+- [ ] Need to provide proper documentation/instructions for the game and plan out the GUI
 
 
 ### Nice to haves (extra-stuff)
