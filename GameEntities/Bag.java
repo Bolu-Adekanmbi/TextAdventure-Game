@@ -112,10 +112,8 @@ public class Bag implements Inventory, Iterable<Item> {
         }
     } 
 
-    // Finish working on the iterator later
-    public Iterator<Item> iterator() {
-        return new Iterator();
-    }
+
+
     
     
 
