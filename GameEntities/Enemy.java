@@ -39,4 +39,12 @@ public class Enemy implements Entity {
         return this.defense;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
 }

@@ -2,7 +2,7 @@ package GameEntities;
 
 import java.util.Arrays;
 
-public class Bag implements Inventory, Iterable<Item> {
+public class Bag implements Inventory {
     private int capacity;
     Item[] itemSlots;
     private int size;
