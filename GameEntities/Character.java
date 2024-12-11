@@ -120,6 +120,18 @@ public class Character implements Entity {
         return this.intelligence;
     }
 
+    public void setIntelligence(double newIntelligence) {
+        this.intelligence = newIntelligence;
+    }
+
+    public LinkedList<Item> getInventory() {
+        return this.inventory;
+    }
+
+    public LinkedList<Armour> getArmourSet() {
+        return this.armourSet;
+    }
+
 
 
 
