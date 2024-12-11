@@ -104,6 +104,26 @@ public class Character implements Entity {
         this.strength = newStrength;
     }
 
+    public void setExperience(double newExperience) {
+        this.experience = newExperience;
+    }
+
+    public double getSpeed() {
+        return this.speed;
+    }
+
+    public void setSpeed(double newSpeed) {
+        this.speed = newSpeed;
+    }
+
+    public double getIntelligence() {
+        return this.intelligence;
+    }
+
+
+
+
+
     
     public String toString() {
         return this.name +" Health: "+ this.health;
