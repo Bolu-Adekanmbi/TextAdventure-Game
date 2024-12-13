@@ -42,7 +42,7 @@ public class Armour {
         this.strengthBoost = newStrengthBoost;
     }
 
-    public void appriase() {
+    public void appraise() {
         // need to work on this functionality later
     }
 

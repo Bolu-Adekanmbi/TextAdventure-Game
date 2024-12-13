@@ -8,6 +8,13 @@
 
 - [ ] Need to Rearrange some classes that are currently in GameEntities package
 
+## HUGE IDEA!!
+- [ ] Have the character story be written progressively by AI as the user plays
+    - Some sort of DnD like game where the dungeon master is replaced by an AI
+    - (This is why I am separating all interactions as separate from the entity
+        to potentially pass into the AI)
+    - Need to figure out how to give the AI access to creating obstacles/campaigns/challenges, etc, as well as how to make sure that the AI remembers context of the entire story (not just what is happening right now) -> Maybe an actively generated list of things the user has done saved in a separate log-file that is passed into the LLM before executing
+
 
 ### Currently Thinking about
 - [ ] Fix simulation test

@@ -1,7 +1,7 @@
 package Interactions;
 import GameEntities.*;
 
-public class Attack {
+public class Attack implements Interaction {
     Entity aggressor;
     Entity recipient;
     int damage;
