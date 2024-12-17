@@ -14,6 +14,14 @@ import java.util.HashMap;
 
 
 public class Map {
+    /* Might have a map generation system that works based on tree traversal depending
+    on the user location and which boundaries they fall within
+    - mostly doing this to practice working with trees 
+
+    -- Need to find a way to implement queue, stacks, etc to practice
+    */ 
+
+
     private String name;
     private String map;
 

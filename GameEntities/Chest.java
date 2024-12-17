@@ -2,12 +2,20 @@ package GameEntities;
 
 public class Chest implements Inventory {
     private int capacity;
+    
+
 
     /*
      * Since chests will generally have a much larger capacity that inventory on
      * hand I want to experiment with a linked list implementation since I switched
      * from linked list to arrays for the bag class 
      */
+
+     /*
+      * Another option I'm thinking about is to have a binary search tree for finding items
+      because large number of items might prove difficult to render all at once while doing a linear
+      search
+      */
 
 
      /*
@@ -22,7 +30,7 @@ public class Chest implements Inventory {
     @Override
     public int getCapacity() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getCapacity'");
+        return this.capacity;
     }
 
     @Override
