@@ -6,7 +6,6 @@ public class Upgrade {
      * This is to avoid  
      */
     private String upgradeType;
-    private String randomThing;
     
     public String getUpgradeType() {
         return this.upgradeType;
@@ -16,9 +15,6 @@ public class Upgrade {
         this.upgradeType = upgradeType;
     }
 
-    public String getRandomThing() {
-        return this.randomThing;
-    }
 
 
 
