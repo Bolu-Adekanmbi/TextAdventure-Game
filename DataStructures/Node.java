@@ -53,6 +53,10 @@ public class Node<T> {
         this.previous = previousNode;
     }
 
+    public String toString() {
+        return data.toString();
+    }
+
 
 
 }

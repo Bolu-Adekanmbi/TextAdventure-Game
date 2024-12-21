@@ -31,6 +31,29 @@ public class DoublyLinkedList<T> {
         return getNode(index).getData();
     }
 
+    public boolean add(T anEntry) {
+        add(size - 1, anEntry);
+        return true;
+    }
+
+    public boolean add(int index, T item) {
+        if (index < 0 || index > size) {
+            return false;
+        }
+
+        Node<T> insertionNode = getNode(index);
+        Node<T> previousNode = insertionNode.getPrevious();
+        Node<T> nextNode = insertionNode.getNext();
+
+        Node<T> newNode = new Node(item);
+
+
+        return true;
+
+
+    }
+
+
     private Node<T> getNode(int index) {
         if (index > size - 1 || size < 0) {
             throw new IndexOutOfBoundsException();
