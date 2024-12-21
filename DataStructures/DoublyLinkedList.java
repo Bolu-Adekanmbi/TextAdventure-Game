@@ -31,10 +31,16 @@ public class DoublyLinkedList<T> {
         return getNode(index).getData();
     }
 
+    /**
+     * 
+     * @param anEntry
+     * @return
+    
     public boolean add(T anEntry) {
         add(size - 1, anEntry);
         return true;
     }
+    */
 
     public boolean add(int index, T item) {
         if (index < 0 || index > size) {
