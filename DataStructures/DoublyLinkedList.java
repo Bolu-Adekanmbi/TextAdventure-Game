@@ -63,6 +63,23 @@ public class DoublyLinkedList<T> {
         size++;
     }
 
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        Node<T> currentNode = head;
+        
+        sb.append("[");
+
+        while (currentNode.getNext() != null) {
+            sb.append(currentNode.getData() +", ");
+            currentNode = currentNode.getNext();
+        }
+
+        sb.append(currentNode);
+        sb.append("]");
+
+        return sb.toString();
+    }
+
 
 
 }
