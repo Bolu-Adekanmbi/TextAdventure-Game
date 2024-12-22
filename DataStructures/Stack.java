@@ -9,9 +9,36 @@ public class Stack<T> {
         
     }
 
-    public boolean add() {
+    public boolean push() {
 
     }
+
+    public T pop() {
+
+    }
+
+    public T[] toArray() {
+
+    }
+
+    @Override
+    public boolean equals() {
+
+    }
+
+    @Override String toString() {
+
+    }
+
+    public boolean contains() {
+
+    }
+
     
+
+    
+    
+
+
 
 }
