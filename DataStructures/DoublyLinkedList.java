@@ -59,6 +59,25 @@ public class DoublyLinkedList<T> {
 
     }
 
+    public boolean contains(T anEntry) {
+        return getIndex(anEntry) > -1;
+    }
+
+    public int getIndex(T anEntry) {
+        Node<T> currentNode = head;
+        int index = 0;
+        while (currentNode != null) {
+            if (currentNode.getData().equals(anEntry)) {
+                return index;
+            }
+
+            index++;
+            currentNode = currentNode.getNext();
+        }
+
+        return -1;
+    }
+
 
     private Node<T> getNode(int index) {
         if (index > size - 1 || size < 0) {
@@ -109,6 +128,19 @@ public class DoublyLinkedList<T> {
         return sb.toString();
     }
 
+
+    @SuppressWarnings("unchecked")
+    public T[] toArray() {
+        T[] contents = (T[]) new Object[this.size];
+        Node<T> currentNode = head;
+
+        for (int i = 0; i < this.size; i++) {
+            contents[i] = currentNode.getData();
+            currentNode = currentNode.getNext();
+        }
+
+        return contents;
+    }
 
 
 }
