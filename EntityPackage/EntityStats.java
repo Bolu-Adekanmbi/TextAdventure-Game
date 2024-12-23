@@ -18,4 +18,44 @@ public class EntityStats {
     private int stamina;
 
 
+    public EntityStats() {
+
+    }
+
+    public int getStrength() {
+
+    }
+
+    public void setStrength(int newStrength) {
+        this.strength = newStrength;
+    }
+
+    public int getSpeed() {
+
+    }
+
+    public int getDefense() {
+
+    }
+
+    public int getIntelligence() {
+
+    }
+
+    public int getAccuracy() {
+
+    }
+
+    public int getEvasion() {
+
+    }
+
+    public int getCriticalChance() {
+
+    }
+
+    public int getStamina() {
+
+    }
+
 }
