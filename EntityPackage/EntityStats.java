@@ -18,8 +18,24 @@ public class EntityStats {
     private int stamina;
 
 
-    public EntityStats() {
-
+    public EntityStats(
+        int strength,
+        int speed,
+        int defense,
+        int intelligence,
+        int accuracy,
+        int evasion,
+        int criticalChance,
+        int stamina
+    ) {
+        this.strength = strength;
+        this.speed = speed;
+        this.defense = defense;
+        this.intelligence = intelligence;
+        this.accuracy = accuracy;
+        this.evasion = evasion;
+        this.criticalChance = criticalChance;
+        this.stamina = stamina;
     }
 
     public int getStrength() {
@@ -34,28 +50,56 @@ public class EntityStats {
         return this.speed;
     }
 
+    public void setSpeed(int newSpeed) {
+        this.speed = newSpeed;
+    }
+
     public int getDefense() {
         return this.defense;
+    }
+
+    public void setDefense(int newDefense) {
+        this.defense = newDefense;
     }
 
     public int getIntelligence() {
         return this.intelligence;
     }
 
+    public void setIntelligence(int newIntelligence) {
+        this.intelligence = newIntelligence;
+    }
+
     public int getAccuracy() {
         return this.accuracy;
+    }
+
+    public void setAccuracy(int newAccuracy) {
+        this.accuracy = newAccuracy;
     }
 
     public int getEvasion() {
         return this.evasion;
     }
 
+    public void setEvasion(int newEvasion) {
+        this.evasion = newEvasion;
+    } 
+
     public int getCriticalChance() {
         return this.criticalChance;
     }
 
+    public void setCriticalChance(int newCriticalChance) {
+        this.criticalChance = newCriticalChance;
+    }
+
     public int getStamina() {
         return this.stamina;
+    }
+
+    public void setStamina(int newStamina) {
+        this.stamina = newStamina;
     }
 
 
