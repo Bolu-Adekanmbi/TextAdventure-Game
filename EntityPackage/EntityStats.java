@@ -23,7 +23,7 @@ public class EntityStats {
     }
 
     public int getStrength() {
-
+        return this.strength;
     }
 
     public void setStrength(int newStrength) {
@@ -31,31 +31,32 @@ public class EntityStats {
     }
 
     public int getSpeed() {
-
+        return this.speed;
     }
 
     public int getDefense() {
-
+        return this.defense;
     }
 
     public int getIntelligence() {
-
+        return this.intelligence;
     }
 
     public int getAccuracy() {
-
+        return this.accuracy;
     }
 
     public int getEvasion() {
-
+        return this.evasion;
     }
 
     public int getCriticalChance() {
-
+        return this.criticalChance;
     }
 
     public int getStamina() {
-
+        return this.stamina;
     }
+
 
 }
