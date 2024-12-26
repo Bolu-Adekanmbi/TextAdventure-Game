@@ -26,12 +26,12 @@ public class Stack<T> {
     }
 
     public T[] toArray() {
-
+        // TODO: Unimplemented method
     }
 
     @Override
     public boolean equals() {
-
+        // TODO: Unimplemented method
     }
 
     @Override String toString() {
