@@ -8,6 +8,10 @@ public class Stack<T> {
         
     }
 
+    public int getSize() {
+        return this.size;
+    }
+
     public void push(T anEntry) {
         Node<T> newNode = new Node<T>(anEntry);
         newNode.setNext(head);
@@ -40,12 +44,31 @@ public class Stack<T> {
         return arrayData;
     }
 
-    
-    public boolean equals(Stack<T> otherStack) {
-        return false;
+    public Node<T> getHead() {
+        return this.head;
     }
 
-    @Override String toString() {
+    
+    public boolean equals(Stack<T> otherStack) {
+        if (size != otherStack.getSize()) {
+            return false;
+        }
+
+        Node<T> currentNode = head;
+        Node<T> otherNode = otherStack.getHead();
+
+        for (int i = 0; i < size; i++) {
+            if (!currentNode.getData().equals(otherNode.getData())) {
+                return false;
+            }
+            currentNode = currentNode.getNext();
+            otherNode = otherNode.getNext();
+        }
+
+        return true;
+    }
+
+    public String toString() {
         if (head == null) {
             return "{}";
         }
