@@ -26,12 +26,23 @@ public class Stack<T> {
     }
 
     public T[] toArray() {
-        // TODO: Unimplemented method
+        T[] arrayData = (T[]) new Object[size];
+        if (size == 0) {
+            return arrayData;
+        }
+
+        Node<T> currentNode = head;
+        for (int i = 0; i < size; i++) {
+            arrayData[i] = currentNode.getData();
+            currentNode = currentNode.getNext();
+        }
+
+        return arrayData;
     }
 
-    @Override
-    public boolean equals() {
-        // TODO: Unimplemented method
+    
+    public boolean equals(Stack<T> otherStack) {
+        return false;
     }
 
     @Override String toString() {
