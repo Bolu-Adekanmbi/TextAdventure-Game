@@ -114,6 +114,19 @@ public class Stack<T> {
     }
 
 
+    public T elementAt(int index) {
+        if (index > size - 1) {
+            throw new IndexOutOfBoundsException();
+        }
+        Node<T> currentNode = head;
+        for (int i = 0; i < index; i++) {
+            currentNode = currentNode.getNext();
+        }
+
+        return currentNode.getData();
+
+    }
+
 
     
     
