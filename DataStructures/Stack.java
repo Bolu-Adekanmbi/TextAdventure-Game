@@ -1,11 +1,16 @@
 package DataStructures;
 
+import java.util.EmptyStackException;
+
+// TODO: Replace all the IndexOutOfBounds to EmptyStackException
+
 public class Stack<T> {
     private Node<T> head;
     private int size;
 
     public Stack() {
-        
+        this.head = null;
+        this.size = 0;
     }
 
     public int getSize() {
@@ -86,7 +91,6 @@ public class Stack<T> {
 
         return sb.toString();
 
-
     }
 
     public boolean contains(T anEntry) {
@@ -101,7 +105,15 @@ public class Stack<T> {
         return false;
     }
 
-    
+    public T peek() {
+        if (size == 0) {
+            throw new EmptyStackException();
+        }
+
+        return this.head.getData();
+    }
+
+
 
     
     
