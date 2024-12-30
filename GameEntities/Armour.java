@@ -6,8 +6,16 @@ public class Armour {
     private int speedBoost;
     private int strengthBoost;
     
-    public Armour() {
-
+    public Armour(
+        int durability,
+        int health,
+        int speedBoost,
+        int strengthBoost
+    ) {
+        this.durability = durability;
+        this.health = health;
+        this.speedBoost = speedBoost;
+        this.strengthBoost = strengthBoost;
     }
 
     public int getDurability() {

@@ -29,7 +29,6 @@ public class Chest implements Inventory {
 
     @Override
     public int getCapacity() {
-        // TODO Auto-generated method stub
         return this.capacity;
     }
 
