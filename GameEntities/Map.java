@@ -32,7 +32,7 @@ public class Map {
         this.name = mapName;
     }
 
-    public String getMape() {
+    public String getMap() {
         return this.map;
     }
 
