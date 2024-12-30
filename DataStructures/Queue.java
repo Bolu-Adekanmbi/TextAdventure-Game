@@ -35,6 +35,31 @@ public class Queue<T> {
         return data;
     }
 
+    public T peek() {
+        if (head == null) {
+            return null;
+        }
+        return head.getData();
+    }
+
+    public T rear() {
+        if (tail == null) {
+            return null;
+        }
+
+        return tail.getData();
+    }
+
+    public int size() {
+        return this.size;
+    }
+
+    public boolean isEmpty() {
+        return this.head == null;
+    }
+
+
+
     
 
 

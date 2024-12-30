@@ -1,41 +1,48 @@
 ## Project Planning
-- [ ] Create a character class that holds attributes for the character
-
-- [ ] Work on the first adventure as a separate class
-
-- [ ] Character moveSet based on character class 
-    - [ ] Brainstorm of varying character classes and work on write-up documentation for this for additional readme file
-
-- [ ] Need to Rearrange some classes that are currently in GameEntities package
-
-## HUGE IDEA!!
-- [ ] Have the character story be written progressively by AI as the user plays
-    - Some sort of DnD like game where the dungeon master is replaced by an AI
-    - (This is why I am separating all interactions as separate from the entity
-        to potentially pass into the AI)
-    - Need to figure out how to give the AI access to creating obstacles/campaigns/challenges, etc, as well as how to make sure that the AI remembers context of the entire story (not just what is happening right now) -> Maybe an actively generated list of things the user has done saved in a separate log-file that is passed into the LLM before executing
+- [x] Restart the idea from scratch since I have more time to flesh out the idea properly
 
 
-### Currently Thinking about
-- [ ] Fix simulation test
-- [ ] Need to re-design character architecture --> Potentially too many fields right now
-- [ ] Need to provide proper documentation/instructions for the game and plan out the GUI
+Stats: strength, speed, 
 
+Base Framework: [ ]
+- Entities: Player (Character), Enemies, NPC, Creatures,
+    - Entities have: names, health bars, stats,
 
-### Nice to haves (extra-stuff)
-- [ ] Cooking - combining raw ingredients (similar to breath of the wild)
-- [ ] Item crafting -> Craftin items based on raw materials
-    - [ ] Need to brainstorm a crafting recipe book (might keep hidden from player??)
-- [ ] GUI for displaying what is going on as well?
-- [ ] Further Interactions such as boost (for teammates), heal, etc.
+Stat line idea:
+- For now, however, I will go with just a basic number of stats to make sure that the
+baseline of character attributes work as intended
 
-### Class implementations
-- [ ] Linked List
-- [ ] ArmourSet
-    - ArmourSet is a linked list of pieces of armour
-    - The set can be swapped out with another bundle and each new piece of armour should be worn from the new set
-        - Maybe a hashmap would be better for this feature?
-        - Re-assigning the head of the linkedlist to the new armourSet and wearing armour based on the name of the piece
-        - With a linked list I need to make sure that there are no duplicate items in a set
-    - Items from the armour should be interchangeable one at a time
-        - The linked list should be able to get one item at a time
+### Core Stats
+Health Points (HP): Represents how much damage the entity can take before being incapacitated.
+Mana Points (MP) / Energy: A resource for casting spells or using special abilities.
+Strength (STR): Measures physical power; often affects melee damage.
+Dexterity (DEX): Determines agility, accuracy, and evasion; affects ranged attacks and dodging.
+Constitution (CON) / Vitality: Governs endurance and resistance to status effects; often influences HP.
+Intelligence (INT): Indicates mental acuity; affects magic power and spell effectiveness.
+Wisdom (WIS): Relates to insight and perception; often affects resistance to magical effects or spiritual abilities.
+Charisma (CHA): Represents charm and leadership; impacts social interactions and influence.
+### Combat Stats
+Attack Power (ATK): Base damage dealt by physical attacks.
+Magic Power (MAG): Base damage or effectiveness of spells.
+Defense (DEF): Reduces physical damage taken.
+Magic Defense (MDEF): Reduces magical damage taken.
+Accuracy: Determines likelihood of hitting a target.
+Evasion: Chance to avoid attacks.
+Critical Chance: Probability of dealing extra damage on a hit.
+Speed: Affects movement and action order in turn-based systems.
+### Secondary Stats
+Luck (LCK): Influences critical hits, loot drops, and random outcomes.
+Stamina: Determines how long an entity can perform strenuous actions.
+Morale: Represents mental resilience; can affect performance under stress.
+Reputation: Reflects social standing or how others perceive the entity.
+Special or Unique Stats
+Stealth: Ability to remain undetected.
+Perception: Ability to notice hidden objects or traps.
+Elemental Affinities: Resistance or weakness to fire, water, earth, air, etc.
+Alignment: Moral or ethical tendencies (e.g., Good vs. Evil).
+Experience Points (XP): Progression metric for leveling up.
+### Adventure-Specific Additions
+Crafting Skill: Proficiency in creating items or tools.
+Barter Skill: Ability to negotiate better deals.
+Survival Skill: Expertise in enduring harsh environments.
+Resourcefulness: Ability to improvise or make the best use of available resources.
