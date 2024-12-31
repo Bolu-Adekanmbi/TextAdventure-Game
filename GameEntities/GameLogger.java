@@ -7,13 +7,14 @@ package GameEntities;
  */
 public class GameLogger {
     StringBuilder gameLogs;
+    int logCount;
 
     public GameLogger() {
 
     }
 
     public void saveLogs() {
-
+        logCount++;
     }
 
     public void clearLogs() {
