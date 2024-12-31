@@ -3,6 +3,7 @@ package EntityPackage;
 public class Player implements BasicEntity {
     private String name;
     private int health;
+    private int strength;
 
     public Player(String name, int newHealth) {
         this.name = name;
