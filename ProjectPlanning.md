@@ -1,6 +1,7 @@
 ## Project Planning
 - [x] Restart the idea from scratch since I have more time to flesh out the idea properly
 
+- At this point I need to figure out if I want to remove the original main repoistory entirely because a lot of it has become convoluted and hard to follow/develop because I rushed and had no planning going in. Furthermore, because of exams I was adding a bunch of things that I thought I would figure out later that have just become a burden in implementing. 
 
 Stats: strength, speed, 
 
