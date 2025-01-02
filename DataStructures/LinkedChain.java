@@ -139,4 +139,15 @@ public class LinkedChain<T> {
         
     }
 
+    public Node<T> getReferenceTo(T anEntry) {
+        Node<T> currentNode = firstNode;
+        while (currentNode != null) {
+            if (currentNode.getData().equals(anEntry)) {
+                return currentNode; // Return the reference to the found node
+            }
+            currentNode = currentNode.getNext();
+        }
+        return null; // Return null if the entry is not found
+    }
+
 }
