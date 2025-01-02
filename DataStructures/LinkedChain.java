@@ -101,4 +101,42 @@ public class LinkedChain<T> {
         return currentNode;
     }
 
+    public void partialReverse(Node<T> givenNode) {
+        if (givenNode == null || firstNode == null) {
+            return;
+        }
+
+        if (!isNodeInChain(givenNode)) {
+            return;
+        }
+
+        Node<T> startRemaining = givenNode.getNext();
+        
+        Node<T> current = givenNode;
+        Node<T> point = givenNode;
+        
+        int counter = 0;
+        Node<T> c = firstNode;
+        while (c != givenNode) {
+        	c = c.getNext();
+        	counter++;
+        }
+        
+        for (int i = 0; i < counter; i++) {
+        	current.setNext(getPreviousNode(point));
+        	current = current.getNext();
+        	current.setNext(point);
+        	point = getPreviousNode(point);
+        }
+        
+        firstNode = givenNode;
+        
+        Node<T> pos = firstNode;
+        for (int i = 0; i < counter; i++) {
+        	pos = pos.getNext();
+        }
+        pos.setNext(startRemaining);
+        
+    }
+
 }
