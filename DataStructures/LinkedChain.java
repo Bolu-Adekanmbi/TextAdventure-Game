@@ -150,4 +150,30 @@ public class LinkedChain<T> {
         return null; // Return null if the entry is not found
     }
 
+    public static class Node<T> {
+        private T data;
+        private Node<T> next;
+
+        public Node(T dataPortion) {
+            this(dataPortion, null);
+        }
+
+        public Node(T dataPortion, Node<T> nextNode) {
+            data = dataPortion;
+            next = nextNode;
+        }
+
+        public T getData() {
+            return data;
+        }
+
+        public Node<T> getNext() {
+            return next;
+        }
+
+        public void setNext(Node<T> newNext) {
+            next = newNext;
+        }
+    }
+
 }
