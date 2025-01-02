@@ -10,6 +10,15 @@ public class LinkedChain<T> {
         numberOfEntries = 0;
     }
 
+    /**
+     * This is the method to add a new entry and item to the linked chain.
+     * If the linked chain is empty, the method changes the head to be a
+     * Node that contains the data, if not, the data is added to the end 
+     * of the linked chain. After the Node is added, the size of the linked
+     * chain is incremented by 1.
+     * @param newEntry This is the new entry that we want to add to the
+     *        linked chain.
+     */
     public void add(T newEntry) {
         Node<T> newNode = new Node<>(newEntry);
         if (isEmpty()) {
@@ -21,6 +30,11 @@ public class LinkedChain<T> {
         numberOfEntries++;
     }
 
+    /**
+     * This is the remove method...
+     * @param anEntry
+     * @return
+     */
     public boolean remove(T anEntry) {
         Node<T> currentNode = firstNode;
         Node<T> previousNode = null;
