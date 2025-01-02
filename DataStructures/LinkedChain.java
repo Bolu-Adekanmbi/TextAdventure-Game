@@ -40,5 +40,65 @@ public class LinkedChain<T> {
         }
         return false;
     }
+    
+    public int getSize() {
+        return numberOfEntries;
+    }
+
+    public boolean isEmpty() {
+        return numberOfEntries == 0;
+    }
+
+    private Node<T> getNodeAt(int index) {
+        Node<T> currentNode = firstNode;
+        for (int i = 1; i < index && currentNode != null; i++) {
+            currentNode = currentNode.getNext();
+        }
+        return currentNode;
+    }
+
+    public T getEntry(int givenPosition) {
+        if (givenPosition >= 1 && givenPosition <= numberOfEntries) {
+            return getNodeAt(givenPosition).getData();
+        }
+        return null;
+    }
+
+    public void printList() {
+        Node<T> currentNode = firstNode;
+        while (currentNode != null) {
+            System.out.print(currentNode.getData() + " ");
+            currentNode = currentNode.getNext();
+        }
+        System.out.println();
+    }
+
+    private boolean isNodeInChain(Node<T> node) {
+        Node<T> currentNode = firstNode;
+        while (currentNode != null) {
+            if (currentNode == node) {
+                return true;
+            }
+            currentNode = currentNode.getNext();
+        }
+        return false;
+    }
+
+    public Node<T> getPreviousNode(Node<T> desiredNode) {
+        if (desiredNode == null || desiredNode == firstNode) {
+            return null;
+        }
+
+        Node<T> currentNode = firstNode;
+        while (currentNode != null && currentNode.getNext() != desiredNode) {
+            currentNode = currentNode.getNext();
+        }
+
+        if (currentNode == null) {
+            return null;
+        }
+
+        return currentNode;
+    }
 
 }
