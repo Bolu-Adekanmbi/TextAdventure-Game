@@ -17,6 +17,14 @@ public class TreeNode<T> extends Node<T> {
      * Further, need to create a constructor for setting left, data, and right
      * and subsequently change the default constructor
      */
+    public Node<T> getLeft() {
+        return this.left;
+    }
+
+    public Node<T> getRight() {
+        return this.right;
+    }
+
 
 
     @Override
